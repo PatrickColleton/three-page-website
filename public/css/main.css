@@ -6,7 +6,7 @@
 
 img {
   height: auto;
-  max-width: 100%
+  max-width: 90%
 }
 
 .container, .row {
@@ -20,7 +20,7 @@ img {
 .col-1 {
   padding: 10px;
   display: inline-block;
-  width: 33%;
+  width: 45%;
 }
 
 @media screen and (max-width: 816px) {
@@ -33,10 +33,7 @@ img {
     width: 48%;
   }
   .col-1:first-child {
-    float: left;
-  }
-  .col-1:nth-child(2) {
-    float: right;
+    margin: auto;
   }
   .col-1:last-child {
     margin-top: 12px;
