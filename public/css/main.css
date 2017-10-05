@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  background-color: rgba(0,0,255,0.1);
+  background-color: rgba(0, 0, 255, 0.1);
 }
 
 img {
-   height: auto;
-   max-width: 100%
+  height: auto;
+  max-width: 100%
 }
 
 .container, .row {
@@ -24,30 +24,24 @@ img {
 }
 
 @media screen and (max-width: 816px) {
-
   .row {
     width: 100%;
     padding: 0;
   }
-
   .col-1:not(:last-child) {
     display: block;
     width: 48%;
   }
-
   .col-1:first-child {
     float: left;
   }
-
   .col-1:nth-child(2) {
     float: right;
   }
-
   .col-1:last-child {
     margin-top: 12px;
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 480px) {
