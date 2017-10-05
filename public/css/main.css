@@ -4,9 +4,13 @@
   background-color: rgba(0, 0, 255, 0.1);
 }
 
+.center{
+  text-align: center;
+}
+
 img {
   height: auto;
-  max-width: 90%
+  max-width: 96%
 }
 
 .container, .row {
@@ -23,16 +27,28 @@ img {
   width: 45%;
 }
 
-@media screen and (max-width: 816px) {
+.col-2 {
+  padding: 10px;
+  display: inline-block;
+  width: 20%;
+}
+
+@media screen and (max-width: 992px) {
+  .row .col-1 {
+    <!--same as > 992px-->
+  }
+}
+
+@media screen and (max-width: 768px) {
   .row {
     width: 100%;
     padding: 0;
   }
   .col-1:not(:last-child) {
     display: block;
-    width: 48%;
   }
   .col-1:first-child {
+    width: 48%;
     margin: auto;
   }
   .col-1:last-child {
