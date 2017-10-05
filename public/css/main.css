@@ -1,9 +1,74 @@
 * {
-  background-color: white;
-  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgba(0,0,0,0.1);
 }
 
 img {
    width: 90%;
    height: auto;
+}
+
+.container, .row {
+  width: 100%;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.row {
+
+}
+
+.col-1 {
+  padding: 10px;
+  display: inline-block;
+  width: 33%;
+}
+
+.col-2 {
+
+}
+
+.col-3 {
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 816px) {
+
+  .row {
+    width: 100%;
+    padding: 0;
+  }
+
+  .col-1:not(:last-child) {
+    display: block;
+    width: 48%;
+  }
+
+  .col-1:first-child {
+    float: left;
+  }
+
+  .col-1:nth-child(2) {
+    float: right;
+  }
+
+  .col-1:last-child {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .row .col-1 {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+  }
 }
